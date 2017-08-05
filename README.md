@@ -7,4 +7,5 @@ php check.php 주소 출력할 내용
 * 남은 자리가 담겨 있는 태그의 선택자 : '.attend .free .number'
 * 전체 자리가 담겨 있는 태그의 선택자 : '.attend .total .number'
 * 원하는 형식 : 제목 : 참가가능/정원
-* php check.php https://onoffmix.com/event/108060 'title' -t' : ' '.attend .free .number' -t'/' '.attend .total .number'
+* 실행 : php check.php https://onoffmix.com/event/108060 'title' -t' : ' '.attend .free .number' -t'/' '.attend .total .number'
+* 결과 : 온오프믹스 :: 코딩야학 경기도 방문수업 : 6/150
