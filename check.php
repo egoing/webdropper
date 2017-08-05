@@ -1,8 +1,13 @@
 <?php
 include 'simple_html_dom.php';
-$url = $argv[4];
+$url = $argv[1];
 $html = file_get_html($url);
-$current = trim($html->find($argv[1])[0]->plaintext);
-$total = trim($html->find($argv[2])[0]->plaintext);
-$title = trim($html->find($argv[3])[0]->plaintext);
-echo $title . ':' . $current . '/' . $total;
+$output = '';
+for($i=2; $i<count($argv); $i++){
+  if(substr($argv[$i], 0, 2) === '-t') {
+    $output .= substr($argv[$i], 2);
+  } else {
+    $output .= trim($html->find($argv[$i])[0]->plaintext);
+  }
+}
+echo $output;
