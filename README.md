@@ -9,3 +9,6 @@ php check.php 주소 출력할 내용
 * 원하는 형식 : 제목 : 참가가능/정원
 * 실행 : php check.php https://onoffmix.com/event/108060 'title' -t' : ' '.attend .free .number' -t'/' '.attend .total .number'
 * 결과 : 온오프믹스 :: 코딩야학 경기도 방문수업 : 6/150
+
+# 참고
+* 이 앱을 만드는 과정 : https://opentutorials.org/module/2503/17115
